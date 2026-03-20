@@ -1,0 +1,4 @@
+Flagged memory/2026-03-19.md in /home/qtxit/.openclaw-eighteen/workspace/system/facts_pending_review.md
+[2026-03-20 00:00:28] INGEST No memory file for 2026-03-20, skipping thea daily ingest
+[2026-03-20 00:00:28] INGEST Total ingested this run: 0 chunks
+[2026-03-20 00:00:28] INGEST Score decay failed (non-fatal): cannot convert float NaN to integer

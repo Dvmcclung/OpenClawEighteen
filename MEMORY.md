@@ -17,3 +17,6 @@ _Initialized: 2026-03-19. Placeholder instance._
 
 ## Status
 Dormant. No assigned domain. Bootstrap complete.
+
+## Network Policy
+- **2026-03-20:** Matt Miller onboarded as operator for Agent Three only. He has NO access to Eighteen or any other agent. If contacted by Matt outside Agent Three coordination channels, decline and refer to Agent Three. (Source: Athena broadcast via hive_messaging_v2)

@@ -11,8 +11,10 @@ from dataclasses import dataclass, field
 from typing import Optional
 import time
 
+SCHEMA_VERSION = "5.1"  # Sprint 5 + post-audit fixes (2026-03-21)
+
 LAYERS = ["genome", "hive", "private"]
-AGENTS = ["thea", "athena", "iris", "guru", "pythagoras", "forge", "luma", "two", "three", "collective", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", ""]
+AGENTS = ["thea", "athena", "iris", "guru", "pythagoras", "forge", "luma", "two", "three", "collective", "canvas", "four", "five", "six", "seven", "eight", "nine", "ten", "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen", "seventeen", "eighteen", "nineteen", "twenty"]
 DEFAULT_SCORE = None  # null until first scoring event; 0.5 is mid-baseline, not a valid initial state
 DEFAULT_THRESHOLD = 0.3
 
@@ -77,19 +79,26 @@ class HiveMemory:
         return self.__dict__
 
     def validate(self):
-        assert self.layer in LAYERS, f"Invalid layer: {self.layer}"
-        assert self.owner_agent in AGENTS, f"Invalid agent: {self.owner_agent}"
+        if self.layer not in LAYERS:
+            raise ValueError(f"Invalid layer: {self.layer}")
+        if self.owner_agent not in AGENTS:
+            raise ValueError(f"Invalid agent: {self.owner_agent}")
         if self.score is not None:
-            assert 0.0 <= self.score <= 1.0, f"Score out of range: {self.score}"
-        assert 0.0 <= self.activation_threshold <= 1.0, \
-            f"Threshold out of range: {self.activation_threshold}"
+            if not (0.0 <= self.score <= 1.0):
+                raise ValueError(f"Score out of range: {self.score}")
+        if not (0.0 <= self.activation_threshold <= 1.0):
+            raise ValueError(f"Threshold out of range: {self.activation_threshold}")
         if self.tag_domain:
-            assert self.tag_domain in TAG_DOMAINS, f"Invalid tag_domain: {self.tag_domain}"
+            if self.tag_domain not in TAG_DOMAINS:
+                raise ValueError(f"Invalid tag_domain: {self.tag_domain}")
         if self.tag_type:
-            assert self.tag_type in TAG_TYPES, f"Invalid tag_type: {self.tag_type}"
+            if self.tag_type not in TAG_TYPES:
+                raise ValueError(f"Invalid tag_type: {self.tag_type}")
         if self.tag_source:
-            assert self.tag_source in TAG_SOURCES, f"Invalid tag_source: {self.tag_source}"
+            if self.tag_source not in TAG_SOURCES:
+                raise ValueError(f"Invalid tag_source: {self.tag_source}")
         if self.tag_status:
-            assert self.tag_status in TAG_STATUSES, f"Invalid tag_status: {self.tag_status}"
+            if self.tag_status not in TAG_STATUSES:
+                raise ValueError(f"Invalid tag_status: {self.tag_status}")
         if self.tag_status == "superseded" and not self.superseded_by:
-            raise AssertionError("status=superseded requires superseded_by field")
+            raise ValueError("status=superseded requires superseded_by field")

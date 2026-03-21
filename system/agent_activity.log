@@ -96,3 +96,22 @@
 [2026-03-20 23:01:04] SURFACE on-demand query='heartbeat health check' memories=5 turn_id=5e56254e-6885-4c1f-8dbd-c5892e6c8d04
 [2026-03-20 23:31:03] EMBED using all-MiniLM-L6-v2
 [2026-03-20 23:31:03] SURFACE on-demand query='heartbeat health check' memories=5 turn_id=e3665453-498e-48cb-9605-d31c98ab5aba
+[2026-03-21 00:00:31] INGEST No memory file for 2026-03-21, skipping thea daily ingest
+[2026-03-21 00:00:31] INGEST Total ingested this run: 0 chunks
+[2026-03-21 00:00:31] INGEST Score decay failed (non-fatal): Table 'hybrid_facts' was not found
+[2026-03-21 00:01:04] EMBED using all-MiniLM-L6-v2
+[2026-03-21 00:01:04] SURFACE on-demand query='heartbeat health check' memories=0 turn_id=bf6ebc07-74e8-4cc1-ad63-2b0712d3c672
+[2026-03-21 00:31:01] EMBED using all-MiniLM-L6-v2
+[2026-03-21 00:31:01] SURFACE on-demand query='heartbeat health check' memories=5 turn_id=b0263d9f-2455-4439-8145-c6f652d4edb4
+[2026-03-21 01:00:59] EMBED using all-MiniLM-L6-v2
+[2026-03-21 01:00:59] SURFACE on-demand query='heartbeat health check' memories=5 turn_id=1714b099-3a09-4b0c-acd4-22c68feb96fe
+[2026-03-21 01:31:00] EMBED using all-MiniLM-L6-v2
+[2026-03-21 01:31:00] SURFACE on-demand query='heartbeat health check' memories=5 turn_id=ed4d4fa6-f0e2-4a3b-87b9-9e7256da8a56
+[2026-03-21 02:00:58] EMBED using all-MiniLM-L6-v2
+[2026-03-21 02:00:58] SURFACE on-demand query='heartbeat health check' memories=5 turn_id=40679141-c240-4c40-9fe0-bd7d69f2cfe6
+[2026-03-21 02:31:00] EMBED using all-MiniLM-L6-v2
+[2026-03-21 02:31:00] SURFACE on-demand query='heartbeat health check' memories=5 turn_id=0c4b11ab-d81c-473b-b77a-213b6f185480
+[2026-03-21 03:00:58] EMBED using all-MiniLM-L6-v2
+[2026-03-21 03:00:58] SURFACE on-demand query='heartbeat health check' memories=5 turn_id=cc0f6595-28e5-4a22-ad51-5dd223a948d0
+[2026-03-21 03:30:58] EMBED using all-MiniLM-L6-v2
+[2026-03-21 03:30:58] SURFACE on-demand query='heartbeat health check' memories=5 turn_id=45c284ad-1525-4289-9283-c981208c7873

@@ -111,7 +111,7 @@ def ingest_file(db, file_path, source_label, owner_agent, layer="hive"):
     if not os.path.exists(file_path):
         return 0
 
-    if TABLE_NAME in db.table_names():
+    if TABLE_NAME in db.list_tables():
         table = db.open_table(TABLE_NAME)
         df = table.to_pandas()
         if 'source' in df.columns:
@@ -128,7 +128,7 @@ def ingest_file(db, file_path, source_label, owner_agent, layer="hive"):
 
     # Load existing vectors once for deduplication checks
     existing_vectors = []
-    if TABLE_NAME in db.table_names():
+    if TABLE_NAME in db.list_tables():
         existing_df = db.open_table(TABLE_NAME).to_pandas()
         if 'vector' in existing_df.columns:
             existing_vectors = existing_df['vector'].dropna().tolist()
@@ -168,7 +168,7 @@ def ingest_file(db, file_path, source_label, owner_agent, layer="hive"):
     if not records:
         return 0
 
-    if TABLE_NAME in db.table_names():
+    if TABLE_NAME in db.list_tables():
         table = db.open_table(TABLE_NAME)
         table.add(records)
     else:

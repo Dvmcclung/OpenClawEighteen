@@ -1,5 +1,12 @@
 # HEARTBEAT.md — Eighteen Periodic Tasks
 
+## Unassigned Instance Check
+
+Before doing anything else, check if this instance has been assigned a role:
+- Read USER.md — if it says "no operator assigned" or is the default template, this instance is dormant
+- If dormant: reply HEARTBEAT_OK immediately. Do not run any other steps.
+- If a role/operator has been assigned: continue with the rest of this file.
+
 ## Daily (first heartbeat)
 1. **Check hive inbox** (messages from other agents):
    ```bash

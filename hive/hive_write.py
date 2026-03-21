@@ -43,7 +43,7 @@ def make_memory_id(text: str, layer: str, owner_agent: str) -> str:
     """Deterministic ID: sha256 of normalized content + layer + owner."""
     normalized = text.strip().lower()
     payload = f"{layer}::{owner_agent}::{normalized}"
-    return hashlib.sha256(payload.encode()).hexdigest()[:16]
+    return hashlib.sha256(payload.encode()).hexdigest()[:24]
 
 
 def make_tag_dict(

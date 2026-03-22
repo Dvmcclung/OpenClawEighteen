@@ -115,3 +115,5 @@
 [2026-03-21 03:00:58] SURFACE on-demand query='heartbeat health check' memories=5 turn_id=cc0f6595-28e5-4a22-ad51-5dd223a948d0
 [2026-03-21 03:30:58] EMBED using all-MiniLM-L6-v2
 [2026-03-21 03:30:58] SURFACE on-demand query='heartbeat health check' memories=5 turn_id=45c284ad-1525-4289-9283-c981208c7873
+[2026-03-22 00:00:36] INGEST No memory file for 2026-03-22, skipping thea daily ingest
+[2026-03-22 00:00:36] INGEST Total ingested this run: 0 chunks

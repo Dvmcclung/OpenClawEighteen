@@ -14,7 +14,7 @@ import time
 SCHEMA_VERSION = "5.1"  # Sprint 5 + post-audit fixes (2026-03-21)
 
 LAYERS = ["genome", "hive", "private"]
-AGENTS = ["thea", "athena", "iris", "guru", "pythagoras", "forge", "luma", "two", "three", "collective", "canvas", "four", "five", "six", "seven", "eight", "nine", "ten", "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen", "seventeen", "eighteen", "nineteen", "twenty"]
+AGENTS = ["thea", "athena", "iris", "guru", "pythagoras", "forge", "luma", "two", "three", "collective", "canvas", "four", "five", "six", "seven", "eight", "nine", "ten", "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen", "seventeen", "eighteen", "nineteen", "twenty", "doctor"]
 DEFAULT_SCORE = None  # null until first scoring event; 0.5 is mid-baseline, not a valid initial state
 DEFAULT_THRESHOLD = 0.3
 

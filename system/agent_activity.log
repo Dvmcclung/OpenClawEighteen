@@ -142,3 +142,6 @@
 [2026-03-26 00:00:33] INGEST No memory file for 2026-03-26, skipping thea daily ingest
 [2026-03-26 00:00:33] INGEST Total ingested this run: 0 chunks
 [2026-03-26 00:00:33] INGEST Score decay failed (non-fatal): cannot convert float NaN to integer
+[2026-03-27 00:04:15] INGEST No memory file for 2026-03-27, skipping thea daily ingest
+[2026-03-27 00:04:15] INGEST Total ingested this run: 0 chunks
+[2026-03-27 00:04:16] INGEST Score decay failed (non-fatal): cannot convert float NaN to integer

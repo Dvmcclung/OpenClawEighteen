@@ -11,3 +11,16 @@
 [2026-03-23 03:32:03] CLUSTER Family registry written: 24 families
 [2026-03-23 03:32:03] CLUSTER Family sizes: min=1, max=436, avg=51.0
 [2026-03-23 03:32:03] CLUSTER DONE Phase 3 clustering
+[2026-03-30 03:32:02] CLUSTER START Phase 3 clustering
+[2026-03-30 03:32:02] CLUSTER Loaded 1402 records
+[2026-03-30 03:32:02] CLUSTER Embedding model: all-MiniLM-L6-v2 | Records: 1402 | Dims: 384
+[2026-03-30 03:32:02] CLUSTER Vector matrix: (1402, 384)
+[2026-03-30 03:32:02] CLUSTER Using AgglomerativeClustering (HDBSCAN not available)
+[2026-03-30 03:32:02] CLUSTER Targeting 26 clusters for 1402 records
+[2026-03-30 03:32:02] CLUSTER AgglomerativeClustering produced 26 clusters
+[2026-03-30 03:32:02] CLUSTER Built 26 families
+[2026-03-30 03:32:02] CLUSTER Writing family_ids back to LanceDB...
+[2026-03-30 03:32:03] CLUSTER LanceDB updated with 1402 records
+[2026-03-30 03:32:03] CLUSTER Family registry written: 26 families
+[2026-03-30 03:32:03] CLUSTER Family sizes: min=1, max=436, avg=53.9
+[2026-03-30 03:32:03] CLUSTER DONE Phase 3 clustering

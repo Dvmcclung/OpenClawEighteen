@@ -67,3 +67,6 @@ Flagged memory/2026-03-20.md in /home/qtxit/.openclaw-eighteen/workspace/system/
 [2026-04-12 00:00:47] INGEST Score decay failed (non-fatal): Table 'hybrid_facts' was not found
 [2026-04-13 00:00:33] INGEST No memory file for 2026-04-13, skipping thea daily ingest
 [2026-04-13 00:00:33] INGEST Total ingested this run: 0 chunks
+[2026-04-14 00:00:31] INGEST No memory file for 2026-04-14, skipping thea daily ingest
+[2026-04-14 00:00:31] INGEST Total ingested this run: 0 chunks
+[2026-04-14 00:00:32] INGEST Score decay failed (non-fatal): cannot convert float NaN to integer

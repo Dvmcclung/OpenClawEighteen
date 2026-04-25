@@ -273,3 +273,5 @@
 [2026-04-24 00:00:40] INGEST Total ingested this run: 0 chunks
 [2026-04-24 00:00:40] SCORE Decay applied to 168 memories
 [2026-04-24 00:00:40] INGEST Score decay applied to 168 memories
+[2026-04-25 00:00:43] INGEST No memory file for 2026-04-25, skipping thea daily ingest
+[2026-04-25 00:00:43] INGEST Total ingested this run: 0 chunks

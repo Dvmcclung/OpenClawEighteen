@@ -82,3 +82,5 @@ Sessions that need key facts extracted and written to shared LanceDB.
 - [ ] `memory/2026-04-26.md` — extract key facts, write to LanceDB
 
 - [ ] `memory/2026-04-27.md` — extract key facts, write to LanceDB
+
+- [ ] `memory/2026-04-28.md` — extract key facts, write to LanceDB
